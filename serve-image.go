@@ -57,7 +57,8 @@ func InitServer() {
 		"/SimplexNoiseOctaves",
 		generateImageResponse(
 			generator,
-			ConvertToGray16AlgoFunc(SimplexNoiseOctaves(0.025, 0.35, 0.65, 0, 4)),
+			ConvertToGray16AlgoFunc(SimplexNoiseOctaves(0.1, -1, 0, 4)),
+			
 		),
 	)
 	http.HandleFunc(
